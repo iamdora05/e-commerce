@@ -480,7 +480,10 @@ body.opened .edina_tm_sidebar{
 .edina_tm_sidebar .menu ul li .list_inner.current a:before{
 	width: 100%;
 }
-
+.fadeInLeft .list_inner{
+	display: grid;
+	justify-content: center;
+}
 .edina_tm_sidebar .menu ul li .svg{
 	width: 19px;
 	height: 19px;
