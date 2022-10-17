@@ -484,6 +484,10 @@ body.opened .edina_tm_sidebar{
 	display: grid;
 	justify-content: center;
 }
+.edina_tm_contact .fadeInLeft .list_inner h3{
+	text-align: center;
+}
+
 .edina_tm_sidebar .menu ul li .svg{
 	width: 19px;
 	height: 19px;
@@ -640,18 +644,6 @@ body.opened .edina_tm_hero .image{
 	font-size: 80px;
 	font-weight: 700;
 	margin-bottom: 14px;
-}
-.edina_tm_hero .extra{
-	position: relative;
-	opacity: 0;
-	visibility: hidden;
-	left: -20px;
-	
-	-webkit-transition: all 1s ease;
-	   -moz-transition: all 1s ease;
-	    -ms-transition: all 1s ease;
-	     -o-transition: all 1s ease;
-	        transition: all 1s ease;
 }
 body.opened .edina_tm_hero .extra{
 	opacity: 1;
@@ -1817,8 +1809,7 @@ body.modal{
 	width: 100%;
 }
 .list_inner_address{
-	display: flex;
-	justify-content: center;
+	text-align: center;
 }
 .edina_tm_contact .extra_info .wrapper > li .list_inner{
 	width: 100%;
@@ -1843,7 +1834,9 @@ body.modal{
 }
 .edina_tm_contact .extra_info .in li :last-child{
 	margin-bottom: 0px;
+	text-align: center;
 }
+
 .edina_tm_contact .extra_info h3{
 	font-size: 20px;
 	font-weight: 500;
