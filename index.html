@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/css-plugins.css">
 <link rel="stylesheet" type="text/css" href="css/css-dark.css">
 <link rel="stylesheet" type="text/css" href="css/css-style.css">
@@ -69,48 +71,27 @@
 </div>
 
 
-<div class="edina_tm_sidebar">
-<div class="sidebar_inner">
-<div class="logo">
-<a href="#home"><img src="images/Ecommerce.png" alt=""></a>
-</div>
-<div class="menu">
-<ul class="anchor_nav">
-<li>
-<div class="list_inner current">
-<a href="#home"><img class="svg custom" src="images/svg-home.png" alt="">Главная</a>
-</div>
-</li>
-<li>
-<div class="list_inner">
-<a href="#about"><img class="svg custom" src="images/user.png" alt="">О нас</a>
-</div>
-</li>
-<li>
-<div class="list_inner">
-<a href="#service"><img class="svg custom" src="images/svg-clients.png" alt="">Клиенты</a>
-</div>
-</li>
-<li>
-    <div class="list_inner">
-    <a href="#portfolio"><img class="svg custom" src="images/customer.png" alt="">Услуги</a>
-    </div>
-    </li>
-<li>
-<div class="list_inner">
-<a href="#contact"><img class="svg custom" src="images/svg-contact.png" alt="">Контакты</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-
 
 <div class="edina_tm_mainpart">
-
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        </button>
+        <div class="logo-container" id="logo-container">
+        <a href=""><img src="images/Ecommerce.png" class="nav-logo"> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a class="smooth_scroll nav_home" href="#home">Главная</a></li>
+                <li><a class="smooth_scroll" href="#about">О нас</a></li>
+                <li><a class="smooth_scroll" href="#service">Клиенты</a></li>
+                <li><a class="smooth_scroll" href="#portfolio">Услуги</a></li>
+                <li><a class="smooth_scroll" href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
 <div class="edina_tm_hero" id="home">
+    
 <div class="content">
+    
 <div class="main"><img src="images/Ecommerce.png"></div>
 <div class="extra">
 <p class="text">Автоматизация бизнес процессов на предприятии</p>
@@ -129,29 +110,29 @@
 <div class="info">
 <h3>Мы - это дружная команда разработчиков, влюблённых в своё дело.</h3>
 <p>Наши сотрудники имеют богатый опыт в разработке программного обеспечения, что помогает предвидеть трудности и решать задачи различной сложности. Каждый разработчик с равной ответственностью подходит к любой задаче, что позволяет нам с уверенность сказать: «Мы создаем качественные продукты!».</p>
-</div>
 <div class="my_skills">
-<p class="desc">Специалисты нашей команды разрабатывали различные программные решения для: платежных систем и операторов электронных денег, микрокредитных организаций, кредитных бюро и банков, государственных служб и организаций.</p>
-<div class="wrapper">
-<div class="left">
-<div class="dodo_progress">
-<div class="progress_inner" data-value="100">
-<span class="label">REACT NATIVE</span>
-<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+    <div class="wrapper">
+    <div class="left">
+    <div class="dodo_progress">
+    <div class="progress_inner" data-value="100">
+    <span class="label">REACT NATIVE</span>
+    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+    </div>
+    <div class="progress_inner" data-value="93">
+    <span class="label">PYTHON</span>
+    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+    </div>
+    <div class="progress_inner" data-value="95">
+    <span class="label">JS</span>
+    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 </div>
-<div class="progress_inner" data-value="93">
-<span class="label">PYTHON</span>
-<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 </div>
-<div class="progress_inner" data-value="95">
-<span class="label">JS</span>
-<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 
 </div>
 </div>
@@ -161,49 +142,29 @@
 <div class="edina_tm_services" id="service">
 <div class="container">
 <div class="edina_tm_title">
-<h3>Наши клиенты</h3>
+<h3>Применяемые технологии</h3>
+<p class="desc">Специалисты нашей команды разрабатывали различные программные решения для: платежных систем и операторов электронных денег, микрокредитных организаций, кредитных бюро и банков, государственных служб и организаций.</p>
 </div>
 <div class="service_list">
 <ul>
-<li class="wow fadeInLeft" data-wow-duration="1s">
-<div class="list_inner">
-<img class="svg custom" src="images/agrokush.png" alt="">
-<div class="service_title"></div>
-<a target="_blank" class="learn_more" href="https://www.facebook.com/agrokush/">Перейти на сайт<span></span></a>
-
-<div class="popup_informations">
-<div class="image">
-</div>
-</div>
-</div>
-</li>
-<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-<div class="list_inner">
-<img class="svg custom" src="images/matkasymov.png" alt="">
-<div class="service_title"></div>
-<a target="_blank" class="learn_more" href="https://matkasymov.kg/">Перейти на сайт<span></span></a>
-<div class="popup_informations">
-<div class="image">
-
-</div>
-
-</div>
-</div>
-</li>
-<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-<div class="list_inner">
-<img class="svg custom" src="images/toyboss.png" alt="">
-<div class="service_title"></div>
-<a target="_blank" class="learn_more" href="https://toyboss.kg/ru/index.htm">Перейти на сайт<span></span></a>
-
-<div class="popup_informations">
-<div class="image">
-
-</div>
-
-</div>
-</div>
-</li>
+    <li class="wow fadeInLeft" data-wow-duration="1s">
+        <div class="list_inner">
+        <img class="svg custom" src="images/web-development.png" alt="">
+        <div class="service_title"><h3>Бекенд</h3></div>
+        </div>
+    </li>
+    <li class="wow fadeInLeft" data-wow-duration="1s">
+        <div class="list_inner">
+        <img class="svg custom" src="images/mobile-development.png" alt="">
+        <div class="service_title"><h3>Мобильная разработка</h3></div>
+        </div>
+    </li>
+        <li class="wow fadeInLeft" data-wow-duration="1s">
+            <div class="list_inner">
+            <img class="svg custom" src="images/ux.png" alt="">
+            <div class="service_title"><h3>Фронтенд</h3></div>
+            </div>
+        </li>
 </ul>
 </div>
 </div>
@@ -334,6 +295,74 @@
 </div>
 
 
+<div class="edina_tm_news" id="blog">
+    <div class="container">
+    <div class="edina_tm_title">
+    <h3>Партнеры</h3>
+    <p>Наши специалисты имеют большой опыт работы с различными секторами, такими как, финансовый сектор, государственный и сектор НПО, что позволило нам хорошо зарекомендовать себя среди финансовых организаций (Mobilnik.kg, БТА Банк, Batly, микро-финансовые компании и др), государственных учреждений (Жогорку Кенеш КР, Департамент Лекарственного Обеспечения КР) и международных организаций (USAID, UNDP).</p>
+    </div>
+    <div class="news_inner wow fadeInLeft" data-wow-duration="1s">
+    <div class="my_carousel">
+    <ul class="owl-carousel">
+        <li>
+            <div class="list_inner">
+            <div class="news_details">
+                <img src="images/agrokush.png" alt="">
+            </div>
+            </div>
+        </li>
+        <li>
+            <div class="list_inner">
+            <div class="news_details">
+                <img src="images/matkasymov.png" alt="">
+            </div>
+            </div>
+        </li>
+        <li>
+            <div class="list_inner">
+            <div class="news_details">
+                <img src="images/toyboss.png" alt="">
+            </div>
+            </div>
+        </li>
+        <li>
+            <div class="list_inner">
+            <div class="news_details">
+                <img src="images/bta_bank.png" alt="">
+            </div>
+            </div>
+        </li>
+        <li>
+            <div class="list_inner">
+            <div class="news_details">
+                <img src="images/mobilnik.png" alt="">
+            </div>
+            </div>
+        </li>
+        <li>
+            <div class="list_inner">
+            <div class="news_details">
+                <img src="images/t.png" alt="">
+            </div>
+            </div>
+        </li>
+        <li>
+            <div class="list_inner">
+            <div class="news_details">
+                <img src="images/usaid.png" alt="">
+            </div>
+            </div>
+        </li>
+    
+    </ul>
+    <a class="prev_button" href="#"><span></span></a>
+    <a class="next_button" href="#"><span></span></a>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
 <div class="edina_tm_contact" id="contact">
 <div class="container">
 <div class="edina_tm_title">
@@ -395,10 +424,18 @@
 </div>
 
 </div>
+<footer class="bg-light text-center text-lg-start">
 
+    <div class="text-center p-3">
+        © 2022 E-Commerce.
+      <a class="text-dark text-decoration-none">All Rights Reserved</a>
+    </div>
+  </footer>
 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script data-cfasync="false" src="js/cloudflare-static-email-decode.min.js"></script><script src="js/1442-js-jquery.js"></script>
-
+<script src="js/scriptNav.js"></script>
 <script src="js/3588-js-plugins.js"></script>
 <script src="js/5419-js-init.js"></script>
 

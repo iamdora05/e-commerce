@@ -1,25 +1,5 @@
 @charset "utf-8";
 
-/*	Copyright (c) 2021 marketify
-/*	Author: marketify
-/*	This file is made for CURRENT TEMPLATE
-
-01)	EDINA BASE
-02) EDINA MOBILE MENU
-03) EDINA SIDEBAR
-04) EDINA HERO
-05) EDINA ABOUT
-06) EDINA SERVICE
-07) EDINA PORTFOLIO
-08) EDINA TESTIMONIALS
-09) EDINA NEWS
-10) EDINA CONTACT
-11) EDINA MEDIA QUERIES (FOR SMALL DEVIVES)
-
-/*--------------------------------f-------------------*/
-/*	01) EDINA BASE
-/*---------------------------------------------------*/
-
 html {
 	overflow-x: hidden;
 	padding: 0px;
@@ -161,6 +141,41 @@ h6 { font-size: 16px; }
     -webkit-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
+}
+.sticky-logo{
+	opacity: 1;
+	transition: all 0.5s;
+	transform: translateY(0%);
+}
+.sticky-menu {
+	opacity: 1;
+	transition: all 0.5s;
+	transform: translateY(0%);
+}
+.navbar{
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	z-index: 999;
+	height: 60px;
+}
+.collapse{
+	justify-content: flex-end;
+}
+.smooth_scroll{
+	font-size: 10pt;
+	margin: 25px;
+	text-decoration: none;
+	color: #395ca9;
+}
+.smooth_scroll:hover{
+	color: #f2b00e;
+}
+.logo-container{
+	margin: 0 0 0 50px;
+}
+.nav-logo{
+	width: 170px;
 }
 .loader_line:before{
     content: '';
@@ -577,7 +592,7 @@ body.opened .edina_tm_sidebar{
 	        transition: all .5s ease;
 }
 body.opened .edina_tm_mainpart{
-	padding-left: 320px;
+	/* padding-left: 320px; */
 }
 .edina_tm_hero{
 	width: 100%;
@@ -701,6 +716,7 @@ body.opened .edina_tm_hero .extra{
 /*---------------------------------------------------*/
 
 .edina_tm_about{
+	background-color: white;
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -741,6 +757,7 @@ body.opened .edina_tm_hero .extra{
 }
 .edina_tm_about .leftpart .info p{
 	max-width: 90%;
+	margin-bottom: 30px;
 }
 .edina_tm_about .my_skills{
 	width: 100%;
@@ -882,17 +899,24 @@ body.opened .edina_tm_hero .extra{
 .edina_tm_title h3{
 	font-size: 60px;
 	font-weight: 800;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	
+}
+.edina_tm_services .edina_tm_title h3{
+	text-align: center;
 }
 .edina_tm_title p{
-	max-width: 600px;
+	text-align: center;
+}
+.edina_tm_news .edina_tm_title p{
+	max-width: 100%;
 }
 .edina_tm_services{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #F9F9FC;
+	background-color: light;
 	padding: 100px 0px 50px 0px;
 }
 .edina_tm_services .service_list{
@@ -910,13 +934,16 @@ body.opened .edina_tm_hero .extra{
 	display: flex;
 	flex-wrap: wrap;
 }
+.my_skills{
+	width: 80%;
+}
 .edina_tm_services ul li{
-	margin: 0px 0px 30px 0px;
+	margin: 0px 0px 90px 0px;
 	padding-left: 30px;
 	float: left;
 }
 .edina_tm_services ul li .list_inner{
-	width: 100%;
+	width: 300px;
 	height: 100%;
 	clear: both;
 	float: left;
@@ -931,14 +958,10 @@ body.opened .edina_tm_hero .extra{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.edina_tm_services ul li .list_inner:hover{
-	background-color: #395ca9;
-}
 .edina_tm_services ul li .svg{
-	width: 200px;
+	width: 120px;
 	height: auto;
-	margin-bottom: 25px;
-	
+	margin: 25px auto;
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -956,9 +979,6 @@ body.opened .edina_tm_hero .extra{
 	font-size: 26px;
 	color: #1A1A1A;
 	margin-bottom: 20px;
-}
-.edina_tm_services ul li .list_inner:hover h3{
-	color: #fff;
 }
 .edina_tm_services ul li .learn_more{
 	text-decoration: none;
@@ -1121,9 +1141,6 @@ body.opened .edina_tm_hero .extra{
 	visibility: hidden;
 	position: absolute;
 	z-index: -11;
-	display: none;
-}
-.edina_tm_modalbox .service_title{
 	display: none;
 }
 .edina_tm_modalbox .description_wrap .svg{
@@ -1540,13 +1557,14 @@ body.opened .edina_tm_hero .extra{
 	clear: both;
 	float: left;
 	padding: 100px 0px;
+	background-color: white;
 }
 .edina_tm_news .news_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 60px;
+	padding-top: 100px;
 }
 .edina_tm_news ul li .news_details{
 	width: 100%;
@@ -2113,6 +2131,13 @@ body.modal{
 .edina_tm_intro .copyright p a:hover{
 	color: #1473E6;
 }
+.footer-link{
+	color: #7e7e7e;
+}
+.footer-link:hover{
+	cursor: pointer;
+	color: #f2b00e;
+}
 
 /*---------------------------------------------------*/
 /*	11) EDINA MEDIA QUERIES (FOR SMALL DEVIVES)
@@ -2127,8 +2152,9 @@ body.modal{
 	.edina_tm_about .experience .info h3{font-size: 30px;line-height: 1.2;}
 	.edina_tm_about .experience .info span{font-size: 16px;}
 	.edina_tm_about .experience{bottom: -65px;left: -65px;}
-	.my_carousel .prev_button, .my_carousel .next_button{width: 65px;height: 65px;}
-	.edina_tm_services ul li .list_inner{padding-right: 40px;}
+	.my_carousel .prev_button, .my_carousel .next_button{width: 65px;height: 65px; margin: auto;}
+	.edina_tm_services ul li .list_inner{padding-right: 40px;     text-align: center;
+		margin-top: 40px;}
 	.edina_tm_services ul li h3{font-size: 23px;}
 	.edina_tm_testimonials .list .short h3{font-size: 19px;}
 	.edina_tm_testimonials .list .short span{font-size: 16px;}
