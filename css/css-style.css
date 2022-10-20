@@ -2204,7 +2204,7 @@ body.modal{
 	.edina_tm_about .content{flex-direction: column;align-items: baseline;}
 	.edina_tm_about .leftpart .info p{max-width: 100%;}
 	.edina_tm_about .desc{max-width: 100%;}
-	.edina_tm_about .leftpart{width: 100%;margin-bottom: 100px;}
+	.edina_tm_about .leftpart{width: 100%;margin-bottom: 0;}
 	.edina_tm_about .rightpart{width: 100%;padding-left: 0px;}
 	.edina_tm_about .experience{left: 50px;}
 	.edina_tm_services ul li{width: 50%;}
@@ -2227,6 +2227,8 @@ body.modal{
 	
 }
 @media (max-width: 768px) {
+	.edina_tm_portfolio{padding: 0px 0px 70px 0px;}
+	.edina_tm_about{padding-bottom: 0; padding-top: 50px;}
 	.edina_tm_about .wrapper{flex-direction: column;align-items: baseline;}
 	.edina_tm_about .wrapper .left{width: 100%;padding: 0px;margin-bottom: 30px;}
 	.edina_tm_about .wrapper .right{width: 100%;padding: 0px;}
@@ -2258,6 +2260,7 @@ body.modal{
 	.edina_tm_intro .demo_list ul li{width: 100%;padding-left: 0px;}
 }
 @media (max-width: 480px) {
+	.edina_tm_title h3{font-size: 28px;}
 	.edina_tm_testimonials .list .details{flex-direction: column;align-items: baseline;}
 	.edina_tm_testimonials .list .author{margin-bottom: 30px;}
 	.edina_tm_testimonials .list .image{width: 75px;height: 75px;}
