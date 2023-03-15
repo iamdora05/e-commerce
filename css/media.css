@@ -1,0 +1,214 @@
+@media only screen and (max-width: 405px) {
+.contact_content{
+    display: grid;
+    line-height: 3;
+}
+}
+@media only screen and (min-width: 480px ){
+    .services_text {
+        font-size: 7.5px;
+        line-height: 20px;
+      }
+}
+@media only screen and (max-width: 520px){
+    .clients-logo-media{
+        display: grid;
+    }
+    .img-responsive:first-child{
+        margin-bottom: 70px;
+    }
+    .competencia_center h6 {
+        padding-top: 150px;
+    }
+    #our-clients{
+        padding-bottom: 0;
+    }
+}
+    
+@media only screen and (min-width: 520px ){
+    .services_text {
+        font-size: 8.9px;
+        line-height: 20px;
+      }
+
+}
+@media only screen and (min-width:550px ){
+    .services_text {
+        font-size: 10px;
+        line-height: 20px;
+      }
+}
+@media only screen and (min-width:576px){
+    .services_text {
+        font-size: 11px;
+      }
+}
+@media only screen and (max-width:576px){
+    .numbers{
+        display: grid;
+    }
+    .whatsapp{
+        margin-bottom: 15px;
+    }
+    .contact_card{
+        height: 300px;
+    }
+    #address{
+        display: grid;
+        justify-content: center;
+    }
+    .address_title{
+        padding-top: 50px;
+        font-size: 24px;
+    }
+    .address_text{
+        font-size: 14px;
+    }
+    #our-clients {
+        padding-top: 70px;
+    }
+    section .container {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .contact_card_text_name{
+        font-size: 20px;
+    }
+    .contact_card_text_jobtitle {
+        font-size: 12px;
+    }
+    .contact_card_text_description{
+        font-size: 12px;
+        width: 76%;
+    }
+    .nmbrs {
+        font-size: 16px;
+    }
+
+}
+@media only screen and (min-width:615px){
+    .services_text {
+        font-size: 13px;
+      }
+}
+@media only screen and  (min-width:646px){
+    .services_text {
+        font-size: 15px;
+        letter-spacing: 3px;
+      }
+}
+.comp_md{
+    display:none ;
+}
+.comp_sm{
+    display:none ;
+}
+.comp_xxs{
+    display: none;
+}
+@media only screen and (max-width: 1170px){
+}
+
+@media only screen and (max-width: 1170px){
+    .comp_lg{
+        display: none;
+    }
+    .comp_sm{
+        display: none;
+    }
+    .comp_md{
+        display:block ;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .comp_lg{
+        display: none;
+    }
+    .comp_md{
+        display: none;
+    }
+    .comp_sm{
+        display:block ;
+    }
+    .comp_xxs{
+        display: none;
+    }
+    .contact_cards{
+        display: grid;
+    }
+    .client_text{
+        padding: 0 0 0 25px;
+    }
+}
+.comp_xs{
+    display: grid;
+    justify-content: center;
+}
+@media only screen and (max-width: 800px){
+    .client_text_description {
+        font-size: 14px;
+    }
+    .client_text{
+        padding: 0 0 0 25px
+    }
+}
+@media only screen and (max-width: 737px){
+    .comp_sm{
+        display: none;
+    }
+    .comp_xs{
+        display: block;
+    }
+    
+.competencia_center .competencia_p {
+        width:80%;
+    }
+}
+@media only screen and (min-width: 738px){
+    .comp_xs{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    .client{
+        display: grid;
+        align-items: center;
+    }
+    .client_text{
+        text-align: center;
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-bottom: 70px;
+    }
+    .clients_logo{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .map_container {
+    margin: 60px 60px 0px 60px;
+    padding-bottom: 100px;
+    }
+    .map_title{
+        padding-top: 60px;
+    }
+    .competencia{
+        padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 584px){
+    .comp_xs{
+        display: none;
+    }
+    .comp_xxs{
+        display: grid;
+        justify-content: center;
+    }
+    #footer .bottomLine {
+        padding: 20px;
+        margin: 0 auto;
+        background-color: white;
+    }
+}
+@media only screen and (min-width: 584px){
+    
+}
